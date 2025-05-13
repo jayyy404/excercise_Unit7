@@ -1,12 +1,12 @@
 import numpy as np
-from keras._tf_keras.keras.models import Sequential
-from keras._tf_keras.keras.layers import Embedding, LSTM, Dense, TimeDistributed, Bidirectional
-from keras._tf_keras.keras.preprocessing.sequence import pad_sequences
-from keras._tf_keras.keras.utils import to_categorical
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, LSTM, Dense, TimeDistributed, Bidirectional
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 import nltk
 from nltk.corpus import brown
-
 
 nltk.download('brown', quiet=True)
 nltk.download('universal_tagset', quiet=True)

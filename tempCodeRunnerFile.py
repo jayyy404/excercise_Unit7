@@ -1,2 +1,2 @@
 
-    emission_probs = defaultdict(dict)
+emission_probs = defaultdict(dict)
